@@ -11,9 +11,6 @@ The Weather App is a web application that allows users to track the weather of t
 ## Technologies Used
 
 - Front-end: React, Remix, Material-UI, Tailwind CSS
-- Back-end: Node.js, Express
-- Database: MongoDB
-- API: WeatherAPI
 
 ## Installation
 
