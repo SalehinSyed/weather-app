@@ -17,7 +17,7 @@ The Weather App is a web application that allows users to track the weather of t
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/your-username/weather-app.git
+git clone git@github.com:srninnovations/weather-app.git
 ```
 
 2. Navigate to the project directory:
