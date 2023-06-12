@@ -130,7 +130,7 @@ const remove = async (formData: FormData) => {
 // getWeatherData function fetches weather data for a city
 const getWeatherData = async (city: string) => {
   const response = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=f177758a270d45ab91805501231106&q=${city}&aqi=yes`
+    `${WEATHER_API_URL}?key=${WEATHER_API_KEY}&q=${city}&aqi=yes`
   );
   const data = await response.json();
   const weatherData: WeatherData = {
@@ -145,6 +145,7 @@ const getWeatherData = async (city: string) => {
         text: data.current.condition.text,
         icon: data.current.condition.icon,
       },
+      precip_mm: data.current.precip_mm,
       humidity: data.current.humidity,
       wind_kph: data.current.wind_kph,
     },

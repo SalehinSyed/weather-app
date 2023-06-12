@@ -17,6 +17,7 @@ export type WeatherData = {
     };
     humidity: number;
     wind_kph: number;
+    precip_mm: number;
   };
 };
 
